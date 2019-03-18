@@ -1,0 +1,103 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+   <head>     
+          <title>User Register</title>          
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link type="text/css" rel="stylesheet" th:href="@{/assets/css/styles.css}"></link>
+         
+          <script type="text/javascript"   th:src="@{/js/custom.js}"></script>
+   
+   </head>
+   
+   
+  
+   
+   <body>
+      <script th:inline ="javascript">
+          alert('hello');
+
+          
+       function myfn()
+       {
+    	   console.log('myfn')
+       }
+          
+
+      </script>
+   
+         <h1> User Register  </h1>  
+           <div  id="wrapper">
+              <h1> Register Form</h1>                        
+               <p>Greetings, it is now, <i th:text="${headerMsg}"></i>  </p>             
+               <form action="#" th:action="@{/registerForm}" th:object="${user}" method="post" autocomplete="off">
+                 
+               <table  id="table_id">
+                <tr>
+                    <th>Name:</th>
+                    <td><input type="text" th:field="*{name}" /></td>
+                    <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}" id="name" required onclick="myfn()">Name Error</td>
+                </tr>
+                
+                 <tr>
+                    <th>User Name:</th>
+                    <td><input type="text" th:field="*{username}" /></td>
+                    <td th:if="${#fields.hasErrors('username')}" th:errors="*{username}" id="username" onclick="pr_username()" >User Name Error</td>
+                </tr>
+                
+                
+                 <tr>
+                    <th>Email:</th>
+                    <td><input type="text" th:field="*{email}" /></td>
+                    <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}" id="email" required >Email Error</td>
+                </tr>
+                
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" th:field="*{password}" /></td>
+                    <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}" id="password" required >Password Error</td>
+                </tr>
+                
+                <tr>
+                    <th>Confirm Password:</th>
+                    <td><input type="password" th:field="*{confirmPassword}" /></td>
+                    <td th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}"    id="confirmPassword" required >ConfirmPassword Error</td>
+                </tr>
+                
+                 <tr>
+                    <th>Role:</th>
+                    <td><input type="text" th:field="*{role}" /></td>
+                    <td th:if="${#fields.hasErrors('role')}" th:errors="*{role}"  id="role" required >Role</td>
+                </tr>
+               
+              </table>
+            
+                 <div class="row" align="center">               
+                   <button type="submit">Submit</button>
+                </div>
+             </form>
+            </div>
+            
+              <div class="footer" >
+              
+                           
+                            <p>&copy; Copyright 2019 create by Emmanuel</p>
+              </div>
+              
+              <div th:include="footer :: copy">
+              
+              
+              </div>
+              
+                
+               
+            
+   
+   
+       
+   </body>
+  
+
+
+
+
+</html>

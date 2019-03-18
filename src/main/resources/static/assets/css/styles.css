@@ -1,0 +1,172 @@
+body
+{
+	margin: 0;
+	font-family: arial;
+	background: #eee; 
+	
+}
+
+#wrapper
+{
+	
+	   width:960px;
+	 	background: #fff;
+	 	margin: 0 auto;
+	 	border-radius:6px;
+	 	overflow: hidden;
+	 	border: 1px solid grey;
+	 	padding: 0 0 20px;
+	 	box-sizing: border-circle; 
+	    box-shadow : 0px 1px 6px rgba(0,0,0,0.2);
+	    
+               
+}
+h1
+{  
+	
+	text-transform: uppercase;
+	 text-align: center;
+	 font-weight: normal;
+	 background-color: grey;
+}
+/*table tr and th to make center*/
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+
+button
+{
+	
+	background-color:#555555;
+	
+	border-radius :12px;
+	
+	color:white;
+	
+	padding:20px;
+	
+	text-align: center;
+	
+	text-decoration : none;
+	
+	display : inline-block;
+	
+	
+	font-size:12px;
+	
+	
+	cursor: pointer;
+	
+	border: none;
+	
+	margin: 0 auto;
+	
+	
+	
+}
+/* button hover */
+button:HOVER {
+	background-color: red;
+}
+
+/* */
+
+td
+{
+	border-radius: 6px 6px, 6px;
+	
+	padding : 20px;
+	
+	width:  : 200px;
+	
+	margin:25px; 
+	
+	
+	
+}
+
+
+p{
+	text-align: center;
+}
+
+
+
+/*footer*/
+
+.footer
+{
+    	text-align: center;;
+    	font-size: :18px;
+       	border: 5px dotted grey;     	
+         width:960px;
+	 	background: #333;	 	
+	 	color: white;	 	
+	 	margin: 0 auto;
+	 	border-radius:6px;
+	 	overflow: hidden;
+	 	border: 1px solid grey;
+	 	padding: 0 0 20px;
+	 	box-sizing: border-circle; 
+	    box-shadow : 0px 1px 6px rgba(0,0,0,0.2);
+    	
+    	    
+}
+
+
+/*rwd media queries*/
+
+
+
+@media(max-width:60px)
+
+{
+	#wrapper
+	{	
+	width: 100%;
+     
+	}
+}
+
+
+
+
+#errorP
+{
+	    font-family: verdana;
+         width:520px;
+	 	background: #fff;
+	 	margin: 0 auto;
+	 	border-radius:6px;
+	 	overflow: hidden;
+	 	border: 1px solid grey;
+	 	padding: 0 0 20px;
+	 	padding-bottom: 10px;
+	 	color: red;
+	 	
+	 
+}
+
+
+a.button
+{
+	background-color: #212F3D;
+	color:white;
+	padding:10px 5px;
+	border: thick;
+	border-radius:6px;
+	overflow: none;
+	margin: 0 auto;
+	
+}
+
+a.button:HOVER {
+	
+	background: black;
+	color: white;
+	
+	
+}

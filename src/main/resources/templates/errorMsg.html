@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Error Msg</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" th:href="@{/assets/css/styles.css}"></link>
+
+<title>Error</title>
+</head>
+<body>
+
+               
+               
+               
+           <div id="errorP" >    
+           <p >Unauthorized user please relogin !! </p>
+           <a class="button" th:href="@{/secured/loginAdmin}" >Admin Login</a>
+           <a class="button" th:href="@{/secured/loginUser }">User Login</a>
+           </div>
+         
+</body>
+</html>

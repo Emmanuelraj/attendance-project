@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Http 500 Error codes</title>
+</head>
+<body>
+          <div id="errorP">Error 500 Page  unAuthorized User please Relogin!
+           
+            <ul>
+                <li> <a th:href="@{/secured/loginUser}">loginUser</a>  </li>
+                <li> <a th:href="@{/secured/loginAdmin}">loginAdmin</a>  </li>
+            </ul>   
+         </div>
+</body>
+</html>

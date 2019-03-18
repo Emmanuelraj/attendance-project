@@ -1,0 +1,68 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>AttendanceSignOut</title>
+  <link type="text/css" rel="stylesheet" th:href="@{/assets/css/mainMenu.css}"></link>
+</head>
+<body>
+
+
+
+ 
+ <div th:insert="mainMenu :: header">
+  </div> 
+  
+   
+   
+    <div  id="main-wrapper" >
+              <h1> Attendance SignOut</h1>                      
+               <p>  welcome   <i th:text="${headerMsg}"></i>  </p>              
+        <form  th:action="@{/secured/attendanceSignOut}" method="post" th:object="${attendanceSignOut}">
+                  <table  id="table_id">
+                
+                 <tr>
+                    <th >User Name:</th>
+                    <td><input type="text"   th:field ="*{userName}" th:name="attendanceSignOut.userName" th:value="${attendanceSignOut.userName}" id="form-control"  disabled required="required"  /></td>
+                  
+                </tr>
+                
+                  <tr>
+                    <th >Sign In:</th>
+                    <td><input type="text"  th:field ="*{startDate}" th:name="attendanceSignOut.startDate" th:value="${attendanceSignOut.startDate}" id="form-control" disabled required="required" /></td>
+                  
+                </tr>
+               
+                
+                <tr>
+                    <th >Sign Out:</th>
+                    <td><input type="text"   th:field ="*{endDate}"  th:name="attendanceSignOut.endDate" th:value="${attendanceSignOut.endDate}" id="form-control" disabled  required="required" /></td>
+                </tr>
+                
+                   <tr>
+                              
+                   <td><button type="submit" id="btn-submit">Submit</button></td>
+                </tr>
+                
+                
+                
+              
+                
+                 </table>
+                 
+                 
+                 
+              
+        
+        </form>
+         
+    </div>
+            
+             <div id="footer" >                         
+                           
+                            <p th:include="footer :: copy"></p>
+              </div>
+             
+              
+
+</body>
+</html>

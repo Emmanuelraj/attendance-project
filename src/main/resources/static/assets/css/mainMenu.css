@@ -1,0 +1,221 @@
+body{
+  font-family: Arial;
+  margin: 0;
+  background: #eee;
+}
+
+
+.main-wrapper
+{
+
+  margin: 0 auto;
+  //max-width: 960px;
+  width:100%;
+}
+
+
+nav{
+  background: #333;
+}
+
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+
+}
+
+
+nav a{
+  text-decoration: none;
+  //text-align: justify;
+  color: #fff;
+  cursor: pointer;
+
+  padding: 10px;
+}
+
+nav a:hover
+{
+  background-color: grey;
+}
+
+/*social menu base styles*/
+a.tw
+{
+  background: url(img/tw.png) no-repeat center;
+  background-size: 80%;
+  //display: flex;
+  //width: 100%;
+//  flex:1 1 0;
+
+}
+
+a.fb
+{
+  background: url(img/fb.png) no-repeat center;
+  background-size: 80%;
+//  display: flex;
+//  flex:1 1 0;
+
+}
+
+.social a
+{
+  text-indent:-10000px;
+}
+.social
+{
+  max-width: 80px;
+  margin: 0 auto;
+}
+nav ul.social
+{
+    display: flex;
+    flex:1 1 0;
+}
+
+
+nav ul.social li
+{
+    display: flex;
+    flex:1 1 0;
+}
+
+
+
+/*flex styles*/
+@media screen and (min-width:768px)
+{
+
+          nav ul
+          {
+            display: flex;
+          }
+           nav li{
+             flex: 1 1 0;
+
+           }
+
+           nav{
+             display: flex;
+             justify-content: space-between;
+           }
+
+           .social
+           {
+             margin: 0;
+           }
+}
+
+
+
+
+#main-wrapper
+{
+	
+	    width:500px;
+	 	background: #fff;
+	 	margin: 0 auto;
+	 	border-radius:6px;
+	 	overflow: hidden;
+	 	border: 1px solid #2C3E50;
+	 	padding: 0 0 20px;
+	 	box-sizing: border-circle; 
+	    box-shadow : 0px 1px 6px rgba(0,0,0,0.2);
+	   
+	    
+               
+}
+h1
+{  
+	
+	 text-transform: uppercase;
+	 text-align: center;
+	 font-weight: normal;
+	 background-color: grey;
+	 color:  white;
+}
+
+
+
+#table_id
+{
+	margin: 0 auto;
+}
+
+
+
+#id
+{
+	  font-family: verdana;
+	  font-size: small;
+	  float: right;
+	  
+	  
+}
+
+
+#logout-wrapper 
+{
+	 float: right;
+   	 
+	 
+	
+}
+
+
+#logoutBtn
+{
+	 background-color: #FA8072;
+	
+	border-radius :12px;
+	
+	color:white;
+	
+	padding: 15px 32px;
+	
+	
+	cursor: pointer;
+}
+
+#logoutBtn:HOVER
+{
+	background-color: #FF0000;
+	
+	color: white;
+}
+
+
+#btn-submit
+{
+	background-color: #85C1E9;
+	color: white;
+	
+	border-radius : 12px;
+	
+	border: thick;
+	
+	padding:12px;
+	
+	margin: 0 auto;
+	
+}
+
+
+#form-control
+{
+    border-radius : 4px;
+    
+    margin : 8px 0;
+    
+    width : 100%;
+    
+    border : 2px white;
+    
+   
+    
+    box-sizing:border-box;	
+}
+
+

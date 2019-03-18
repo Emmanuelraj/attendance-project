@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home ADMIN</title>
+  <link type="text/css" rel="stylesheet" th:href="@{/assets/css/mainMenu.css}"></link>
+</head>
+<body>
+
+
+  <div th:insert="mainMenu :: header">
+  </div> 
+
+    <h1  id="id" th:inline="text"> Logged As  ADMIN [[${#httpServletRequest.remoteUser}]]</h1> 
+  
+
+  
+  <!-- 
+   <div id="logout-wrapper" >
+   <form th:action="@{/logout}" method="post" id="homeAdmin">
+      <input id="logoutBtn" type="submit" value="Sign Out">  
+   </form>
+   </div>
+    -->
+</body>
+</html>

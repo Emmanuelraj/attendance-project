@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+ <head>
+<meta charset="ISO-8859-1">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link type="text/css" rel="stylesheet" th:href="@{/assets/css/styles.css}"></link>
+      
+<title>Login Form</title>
+</head>
+<body>
+
+
+            <h1>Login Form</h1>
+            
+            
+              <p>You successfully Registered</p>
+                
+   
+   
+           <form th:action="@{/logout}" method="post">
+             <button type="submit" value="Sign Out">Sign Out</button>
+   
+             </form>
+
+              
+              
+              
+
+</body>
+</html>
