@@ -9,11 +9,12 @@
           Custom error Pages
           keystore (jks)
 # EndPoints:
-          https://localhost:3000/register              -----------> for register
-          https://localhost:3000/secured/loginUser             --->  User Login
-          https://localhost:3000/secured/loginAdmin            ---> Admin Login
-          https://localhost:3000/secured/attendancSignIn       ---> Attendance signIn
-          https://localhost:3000/secured/attendancSignOut      ---> Attendance signOut
+https://localhost:3000/register              -----------> for register
+https://localhost:3000/secured/loginUser             --->  User Login
+https://localhost:3000/secured/loginAdmin            ---> Admin Login
+https://localhost:3000/secured/attendancSignIn       ---> Attendance signIn
+https://localhost:3000/secured/attendancSignOut      ---> Attendance signOut
+https://localhost:3000/secured/getList            -----> get remoteUserAttendanceDetails        
 # Prior:
          change application.properties 
          spring.jpa.hibernate.ddl-auto=cteate
