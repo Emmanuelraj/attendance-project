@@ -324,27 +324,33 @@ public class AttendanceController
 						   boolean halfDayPresent = false;
 		    	    	 //update 
 						  
-						   if(diffInHours <=8  && diffInHours >= 4 )
+						   if(diffInHours == 4 && (!( diffInHours<=8)))
 						   {
-							   
-							   fullDayPresent = true;
-							   halfDayPresent = false;
+							   log.info("HalfDay Present");
+							   fullDayPresent = false;
+							   halfDayPresent = true;
 							   unlock = true;
+							   dto.setFullDayPresent(fullDayPresent);
+							   dto.setHalfDayPresent(halfDayPresent);
+						       dto.setUnlock(unlock);
 						   }
 		    	    	 
-						   else  if(diffInHours >= 4 &&(!( diffInHours>=8) ))
+						   else  if(diffInHours >= 4 &&(!( diffInHours<=8) ))
 						   {
-							   fullDayPresent = false;
-							    halfDayPresent = true;
+							   log.info("FullDay Present");
+							   fullDayPresent = true;
+							    halfDayPresent = false;
+							    dto.setFullDayPresent(fullDayPresent);
+							    dto.setHalfDayPresent(halfDayPresent);
+							     dto.setUnlock(unlock);
 						   }
 						   
 						   else
 						   {
 							   unlock = false;
+							   dto.setUnlock(unlock);
 						   }
-							   dto.setFullDayPresent(fullDayPresent);
-							   dto.setHalfDayPresent(halfDayPresent);
-						       dto.setUnlock(unlock);
+							   
 						       
 						       
 						       attendanceRepo.save(dto);
